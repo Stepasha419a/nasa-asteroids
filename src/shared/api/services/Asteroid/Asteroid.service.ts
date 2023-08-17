@@ -1,6 +1,4 @@
 import { Asteroid } from '../../interfaces';
-import data from './data.json';
-import singleData from './singleData.json';
 
 export interface GetAsteroidsResponse {
   asteroids: Asteroid[];
@@ -10,9 +8,7 @@ export interface GetAsteroidsResponse {
 class AsteroidService {
   async getAsteroids(nextLink: string | null): Promise<GetAsteroidsResponse> {
     if (nextLink) {
-      const res = await fetch(nextLink, {
-        headers: { 'Access-Control-Allow-Origin': 'http://api.nasa.gov' },
-      });
+      const res = await fetch(nextLink);
       const data = await res.json();
 
       return {
