@@ -17,13 +17,15 @@ export const CartProvider = (Component: FC) => {
 
     return (
       <CartContext.Provider
-        value={{
-          ...cartContext,
-          orderAsteroid,
-          removeAsteroidOrder,
-          submitOrderAsteroids,
-          getSavedAsteroidsOrder,
-        }}
+        value={
+          {
+            ...cartContext,
+            orderAsteroid,
+            removeAsteroidOrder,
+            submitOrderAsteroids,
+            getSavedAsteroidsOrder,
+          } as CartContext
+        }
       >
         <Component />
       </CartContext.Provider>
