@@ -1,0 +1,19 @@
+.title {
+  max-width: 400px;
+  margin: 0 auto;
+  font-size: 28px;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 500px) {
+  .title {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 450px) {
+  .title {
+    max-width: 270px;
+  }
+}

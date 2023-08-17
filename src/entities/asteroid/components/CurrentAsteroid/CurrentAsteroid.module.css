@@ -1,0 +1,153 @@
+.container {
+  max-width: 1200px;
+  width: 100%;
+  position: relative;
+}
+
+.asteroid {
+  position: absolute;
+  top: -114px;
+  right: -200px;
+  padding: 30px;
+}
+
+.image {
+  border: 1px solid #dddddd;
+}
+
+.property {
+  width: 100%;
+  padding: 4px 10px;
+  font-size: 18px;
+
+  border: 1px solid #dddddd;
+}
+
+.property .name {
+  display: inline-block;
+  width: 90px;
+}
+
+.dates {
+  max-width: 520px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-left: 18vw;
+  border: 1px solid #dddddd;
+  border-collapse: collapse;
+}
+
+.dates thead{
+  position: sticky;
+  top: 0;
+}
+
+.dates th {
+  font-weight: bold;
+  padding: 5px;
+  color: #000;
+  background: #efefef;
+  border: 1px solid #dddddd;
+}
+
+.dates td {
+  border: 1px solid #dddddd;
+  padding: 5px;
+}
+
+.dates tbody tr:nth-child(odd) {
+  background: #2b2b2b;
+}
+.dates tbody tr:nth-child(even) {
+  background: rgb(15, 15, 15);
+}
+
+.date {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.value {
+  margin: 0 6px;
+}
+
+@media (max-width: 1700px) {
+  .asteroid {
+    right: -100px;
+  }
+}
+
+@media (max-width: 1450px) {
+  .asteroid {
+    right: 0px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .dates {
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .dates {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 950px) {
+  .dates {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .asteroid {
+    width: 300px;
+    position: static;
+    margin: 0 auto;
+  }
+
+  .image {
+    background-color: #000;
+  }
+
+  .property {
+    background: #2b2b2b;
+  }
+
+  .dates {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .dates th,
+  .dates td {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .dates th,
+  .dates td {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 350px) {
+  .asteroid {
+    max-width: 300px;
+    width: 100%;
+    padding: 0px;
+  }
+
+  .dates th,
+  .dates td {
+    font-size: 10px;
+  }
+}

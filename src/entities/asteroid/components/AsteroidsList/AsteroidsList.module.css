@@ -1,0 +1,50 @@
+.distance {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 8px;
+}
+
+.btn.active {
+  text-decoration: underline;
+}
+
+.asteroids {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+  .asteroids {
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 500px) {
+  .title {
+    max-width: 300px;
+  }
+
+  .distance {
+    max-width: 300px;
+  }
+
+  .asteroids {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 450px) {
+  .title {
+    max-width: 270px;
+  }
+
+  .distance {
+    max-width: 270px;
+  }
+
+  .asteroids {
+    max-width: 270px;
+  }
+}

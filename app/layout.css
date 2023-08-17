@@ -1,0 +1,28 @@
+body {
+  font-family: 'Helvetica';
+  font-size: 16px;
+  background-color: var(--primary-bg);
+  color: var(--primary-main);
+  background-image: url(../public/images/Earth.png);
+  background-repeat: no-repeat;
+  background-position: 0 138px;
+}
+
+@media (max-width: 1200px) {
+  body {
+    background-position: -150px 138px;
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 900px) {
+  body {
+    background-position: -250px 123px;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    background-position: -350px 100px;
+  }
+}

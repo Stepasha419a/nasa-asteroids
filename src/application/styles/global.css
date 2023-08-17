@@ -1,0 +1,5 @@
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../../../public/fonts/Helvetica.ttf') format('truetype'),
+    url('../../../public/fonts/Helvetica-Bold.ttf') format('truetype');
+}

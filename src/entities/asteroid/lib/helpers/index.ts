@@ -1,0 +1,1 @@
+export { getAsteroidData } from './getAsteroidData';
