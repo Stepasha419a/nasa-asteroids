@@ -12,7 +12,14 @@ yarn install
 pnpm install
 ```
 
-Second, run the development server:
+Second, set .env.local variables as nasa api key:
+nasa api: https://api.nasa.gov/
+
+```bash
+NEXT_PUBLIC_API_KEY=...
+```
+
+Third, run the development server:
 
 ```bash
 npm run dev
